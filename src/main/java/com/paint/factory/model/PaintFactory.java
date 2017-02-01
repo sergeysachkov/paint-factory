@@ -39,7 +39,7 @@ public class PaintFactory {
     public String produce() {
         Map<Integer, Paint> outputPaints = new HashMap<>();
         Set<Paint> bestFit;
-
+        //todo to trigger build
         List<Customer> customersClone = new ArrayList<>(getCustomersCopy(this.customers));
         if (!customersClone.isEmpty()) {
             while (!customersClone.isEmpty()) {
